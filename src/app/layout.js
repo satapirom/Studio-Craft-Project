@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { AuthProvider } from './provider';
+import '../app/globals.css';
+import Navbar from "@/app/components/Navbar/Navbar";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <AuthProvider>
+          <div className="layout-container">
+            <Navbar />
+            <main className="main-content">
+              {children}
+              <ToastContainer />
+            </main>
+          </div>
+        </AuthProvider>
+      </body>
     </html>
   );
 }
+
