@@ -46,7 +46,7 @@ const LoginForm = () => {
                         maxLength={16}
                     />
                     <div className="flex justify-start mb-4 font-light text-xs md:text-sm">
-                        <Link href='/login/forgot-password' className="cursor-pointer hover:underline transition-all duration-300">
+                        <Link href='/api/forgot-password' className="cursor-pointer hover:underline transition-all duration-300">
                             Forgot your password?
                         </Link>
                     </div>
