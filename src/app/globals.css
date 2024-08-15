@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
 
 /* สไตล์ที่ปรับแต่งสำหรับ Toastify */
 .Toastify__toast {

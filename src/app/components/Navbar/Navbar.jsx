@@ -22,10 +22,10 @@ const Nevbar = () => {
                     />
                     <div>
                         <Link href='/'>
-                            <h1
-                                className='text-sm md:text-xl lg:text-2xl font-light mx-2 md:mx-4 h-4 md:h-6 lg:h-8 flex items-center cursor-pointer'>
+                            <h2
+                                className='text-sm md:text-xl lg:text-2xl font-light mx-2 md:mx-4 h-4 md:h-6 lg:h-8 flex items-center cursor-pointer hover:text-[#AA988A]'>
                                 Studio Carft
-                            </h1>
+                            </h2>
                         </Link>
                     </div>
                 </div>
